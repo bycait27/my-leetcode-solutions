@@ -95,3 +95,28 @@ var createCounter = function(init) {
  * counter.reset(); // 5
  * counter.decrement(); // 4
  */
+
+// ------------------------------------------------------------------- 
+// Apply Transform Over Each Element in Array Function
+
+/**
+ * @param {number[]} arr
+ * @param {Function} fn
+ * @return {number[]}
+ */
+
+var map = function(arr, fn) {
+    // empty array to store the transformed elements
+    let returnedArray = [];
+
+    // iterate through the input array
+    for (let i = 0; i < arr.length; i++) {
+        let transformedElement = fn(arr[i], i);
+
+        // add the transformed element to the result array
+        returnedArray.push(transformedElement);
+    };
+
+    // return the final result array
+    return returnedArray;
+};
