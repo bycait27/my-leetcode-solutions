@@ -120,3 +120,20 @@ var map = function(arr, fn) {
     // return the final result array
     return returnedArray;
 };
+
+// ------------------------------------------------------------------- 
+// Return Length of Arguments Passed Function
+
+/**
+ * @param {...(null|boolean|number|string|Array|Object)} args
+ * @return {number}
+ */
+var argumentsLength = function(...args) {
+    let argumentsLength = [...args];
+    return argumentsLength.length;
+    
+};
+
+/**
+ * argumentsLength(1, 2, 3); // 3
+ */
