@@ -177,3 +177,21 @@ var isEmpty = function(obj) {
 
 // ------------------------------------------------------------------- 
 // Array Prototype Last Function
+/**
+ * @return {null|boolean|number|string|Array|Object}
+ */
+
+Array.prototype.last = function() {
+    // if there are no elements, return -1
+    if (this.length === 0) {
+        return -1;
+    // otherwise, return the last element in the array
+    } else {
+        return this[this.length -1];
+    }
+};
+
+/**
+ * const arr = [1, 2, 3];
+ * arr.last(); // 3
+ */
