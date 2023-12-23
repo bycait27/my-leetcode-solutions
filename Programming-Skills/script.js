@@ -46,3 +46,11 @@ var lengthOfLastWord = function(s) {
 
 // ------------------------------------------------------------------- 
 // To Lower Case
+/**
+ * @param {string} s
+ * @return {string}
+ */
+var toLowerCase = function(s) {
+    return s.toLowerCase();
+    
+};
