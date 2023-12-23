@@ -122,6 +122,29 @@ var map = function(arr, fn) {
 };
 
 // ------------------------------------------------------------------- 
+// Filter Elements from Array Function
+/**
+ * @param {number[]} arr
+ * @param {Function} fn
+ * @return {number[]}
+ */
+ 
+var filter = function(arr, fn) {
+    // initialize an empty array 
+    let filteredArr = [];
+
+    // iterate through the input array
+    for (let i = 0; i < arr.length; i++) {
+        if (fn(arr[i], i)) {
+            filteredArr.push(arr[i]);
+        }
+    }
+
+    // return the filtered array
+    return filteredArr;
+};
+
+// ------------------------------------------------------------------- 
 // Return Length of Arguments Passed Function
 
 /**
