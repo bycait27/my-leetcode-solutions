@@ -26,3 +26,23 @@ var arraySign = function(nums) {
     return signFunc(product);
 
 };
+
+// ------------------------------------------------------------------- 
+// Length of Last Word
+/**
+ * @param {string} s
+ * @return {number}
+ */
+var lengthOfLastWord = function(s) {
+    // turn string into an array
+    let arr = s.trim().split(" ");
+
+    // get the last item in the array
+    const lastItem = arr[arr.length - 1];
+
+    // return length of last item
+    return lastItem.length;
+};
+
+// ------------------------------------------------------------------- 
+// To Lower Case
