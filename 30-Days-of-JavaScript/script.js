@@ -160,3 +160,20 @@ var argumentsLength = function(...args) {
 /**
  * argumentsLength(1, 2, 3); // 3
  */
+
+// ------------------------------------------------------------------- 
+// Is Object Empty Function
+/**
+ * @param {Object|Array} obj
+ * @return {boolean}
+ */
+var isEmpty = function(obj) {
+    if (Object.keys(obj).length === 0) {
+        return true;
+    } else {
+        return false;
+    }
+};
+
+// ------------------------------------------------------------------- 
+// Array Prototype Last Function
